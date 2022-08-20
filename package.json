@@ -1,0 +1,22 @@
+{
+  "name": "cypress_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run",
+    "headtest": "npm run test -- --headed",
+    "firefoxtest": "npm run test -- --browser firefox --headed",
+    "dashboardtest": "npm run test -- --record --key ade8f12a-1c36-491e-a232-bf31851bfa2d",
+    "GreenKarttest": "npm run test -- --spec \"cypress/integration/GreenKart/*\""
+  },
+ 
+
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3"
+  }
+}
